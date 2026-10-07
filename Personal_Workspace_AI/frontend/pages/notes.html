@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notes | Personal Workspace AI</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Notes CSS -->
+    <link rel="stylesheet" href="../css/notes.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <h2>Personal Workspace AI</h2>
+
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="tasks.html">Tasks</a>
+            </li>
+
+            <li>
+                <a href="notes.html" class="active">Notes</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Main Notes Page -->
+    <main class="notes-page">
+
+        <!-- Page Header -->
+        <div class="notes-header">
+
+            <h1>My Notes</h1>
+
+            <p>
+                Create, save and manage your notes in one place.
+            </p>
+
+        </div>
+
+
+        <!-- Add Note Box -->
+        <div class="note-form">
+
+            <input
+                type="text"
+                id="noteTitle"
+                placeholder="Enter note title"
+            >
+
+            <textarea
+                id="noteContent"
+                placeholder="Write your note here..."
+            ></textarea>
+
+            <button
+                class="add-note-btn"
+                onclick="addNote()"
+            >
+                + Add Note
+            </button>
+
+        </div>
+
+
+        <!-- Saved Notes -->
+        <section class="saved-notes">
+
+            <div class="section-title">
+
+    <h2>Saved Notes</h2>
+
+    <span class="note-count" id="noteCount">
+        0 Notes
+    </span>
+
+</div>
+
+<!-- Search Notes -->
+<div class="search-notes">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search your notes..."
+        oninput="searchNotes()"
+    >
+
+</div>
+
+
+            <!-- Notes will appear here -->
+            <div id="notesList">
+
+                <!-- JavaScript will add notes here -->
+
+            </div>
+
+        </section>
+
+    </main>
+    
+    <!-- Note Modal -->
+
+<div id="noteModal" class="note-modal">
+
+    <div class="note-modal-content">
+
+        <div class="note-modal-header">
+
+            <h2 id="modalTitle">
+                Note
+            </h2>
+
+            <button
+                class="close-modal-btn"
+                onclick="closeNote()"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="note-modal-body">
+
+            <p id="modalContent"></p>
+
+        </div>
+
+    </div>
+
+ </div>
+
+    <!-- JavaScript -->
+    <script src="../js/notes.js"></script>
+
+</body>
+
+</html>
