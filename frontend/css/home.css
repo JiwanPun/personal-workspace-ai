@@ -1,0 +1,190 @@
+/* =================================
+   HOME PAGE
+================================= */
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    text-align: center;
+
+    padding: 90px 20px 70px;
+}
+
+.hero h2 {
+    font-size: 40px;
+
+    color: #111827;
+
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 18px;
+
+    color: #6b7280;
+
+    max-width: 650px;
+
+    margin: 0 auto 28px;
+
+    line-height: 1.6;
+}
+
+
+/* =================================
+   MAIN BUTTON
+================================= */
+
+.btn {
+    display: inline-block;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* =================================
+   FEATURES
+================================= */
+
+.features {
+    text-align: center;
+
+    padding: 55px 40px;
+}
+
+.features h2 {
+    color: #111827;
+
+    font-size: 28px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =================================
+   FEATURE CARDS
+================================= */
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    flex-wrap: wrap;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.card {
+    width: 250px;
+
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 9px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+
+    border-color: #bfdbfe;
+}
+
+.card h3 {
+    color: #111827;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background: #ffffff;
+
+    color: #6b7280;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 60px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding: 60px 20px 50px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features {
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 100%;
+
+        max-width: 350px;
+    }
+}
